@@ -1,0 +1,44 @@
+.mainContent {
+    color: #ffffff;
+    margin-left: 25%;
+    padding: 5%;
+}
+
+.userDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.detailBlock {
+    flex: 1 1 calc(33.33% - 10px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f78e02;
+}
+
+.editForm {
+    color: #060254;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#welomeText {
+    color: #060254;
+}
+
+#editBtn {
+    color: #060254;
+    display: block;
+    margin: auto;
+}
+
+#saveBtn {
+    color: #060254;
+}
+
+#cancelBtn {
+    color: darkred;
+}

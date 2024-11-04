@@ -1,0 +1,41 @@
+.logo {
+    width: 50%;
+    margin-top: -10%;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    background-color: #060254;
+    padding: 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -10%;
+}
+
+.sidebar-button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #f78e02;
+}
+
+.sidebar-button:hover {
+    background-color: #ffffff;
+}
+
+.sidebar-button.selected {
+    background-color: #f78e02;
+    color: #ffffff;
+}
