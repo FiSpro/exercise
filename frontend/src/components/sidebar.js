@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { LIMIT_USERS_API_URL } from "../api";
+import { LIMIT_USERS_API_URL, USERS_FROM_BACKEND_URL } from "../api";
 import './sidebar.css';
 
 function Sidebar({ onSelectUser, selectedUser }) {
@@ -7,11 +7,12 @@ function Sidebar({ onSelectUser, selectedUser }) {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch(`${LIMIT_USERS_API_URL}`)
+    fetch(`${USERS_FROM_BACKEND_URL}`)        // For the DummyJSON use LIMIT_USERS_API_URL
       .then((response) => response.json())
       .then((data) => setUsers(data.users))
       .catch((error) => console.error("Error fetching users", error));
   }, []);
+  console.log(users);
 
   return (
     <div className='sidebar'>

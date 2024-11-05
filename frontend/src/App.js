@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Sidebar from './components/sidebar';
-import { UPDATE_USER_DATA_URL } from './api';
+import { UPDATE_USER_DATA_URL, UPDATE_USER_FROM_BACKEND_URL } from './api';
 
 function App() {
 
@@ -28,14 +28,14 @@ function App() {
 
   const handleSaveClick = async () => {
     try {
-      const response = await fetch(`${UPDATE_USER_DATA_URL + selectedUser.id}`, {
+      const response = await fetch(`${UPDATE_USER_FROM_BACKEND_URL + selectedUser.id}`, {     // For DummyJSON use UPDATE_USER_DATA_URL
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
       const updatedUser = await response.json();
-      setSelectedUser(updatedUser); // Update view with response data
-      setIsEditing(false); // Exit edit mode
+      setSelectedUser(updatedUser);       // Update view with response data
+      setIsEditing(false);                // Exit edit mode
     } catch (error) {
       console.error("Error updating user:", error);
     }

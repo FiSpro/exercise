@@ -6,7 +6,7 @@
 .sidebar {
     width: 25%;
     height: 100vh;
-    background-color: #060254;
+    background-color: #090f2d;
     padding: 1%;
     position: fixed;
     top: 0;
@@ -28,7 +28,7 @@ ul {
     text-align: left;
     border: none;
     border-bottom: 1px solid #ddd;
-    color: #f78e02;
+    color: #ea6020;
 }
 
 .sidebar-button:hover {
@@ -36,6 +36,6 @@ ul {
 }
 
 .sidebar-button.selected {
-    background-color: #f78e02;
+    background-color: #ea6020;
     color: #ffffff;
 }

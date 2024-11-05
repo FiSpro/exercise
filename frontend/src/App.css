@@ -15,28 +15,32 @@
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f78e02;
+    background-color: #ea6020;
+}
+
+.detailBlock label {
+    color: #ffffff;
 }
 
 .editForm {
-    color: #060254;
+    color: #090f2d;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
 #welomeText {
-    color: #060254;
+    color: #090f2d;
 }
 
 #editBtn {
-    color: #060254;
+    color: #090f2d;
     display: block;
     margin: auto;
 }
 
 #saveBtn {
-    color: #060254;
+    color: #090f2d;
 }
 
 #cancelBtn {
